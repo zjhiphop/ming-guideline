@@ -3,18 +3,51 @@
   "compilerOptions": {
     "rootDir": ".",
     "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "esModuleInterop": true,
+    "target": "ES2018",
+    "module": "ES6",
+    "lib": [
+      "ES2018",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ming-guide": [
+        "packages/ming-guide/index.ts"
+      ],
+      "@ming-guide/components": [
+        "packages/components/index.ts"
+      ],
+      "@ming-guide/directives": [
+        "packages/directives/index.ts"
+      ],
+      "@ming-guide/hooks": [
+        "packages/hooks/index.ts"
+      ],
+      "@ming-guide/theme": [
+        "packages/theme/src/index.ts"
+      ],
+      "@ming-guide/tokens": [
+        "packages/tokens/index.ts"
+      ],
+      "@ming-guide/utils": [
+        "packages/utils"
+      ]
+    }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp",
+    "**/__test?__",
+    "**/dist"
+  ]
 }

@@ -1,0 +1,23 @@
+{
+  "root": "packages/docs",
+  "projectType": "application",
+  "sourceRoot": "packages/docs/src",
+  "targets": {
+    "build": {
+      "executor": "nx-vue3-vite:build-docs",
+      "options": {
+        "dist": "dist/packages/docs"
+      }
+    },
+    "serve": {
+      "executor": "nx-vue3-vite:docs-dev-server"
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["packages/docs/**/*.{js,jsx,ts,tsx,vue}"]
+      }
+    }
+  },
+  "tags": []
+}

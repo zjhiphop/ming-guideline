@@ -1,6 +1,6 @@
 {
   "extends": "@nrwl/workspace/presets/core.json",
-  "npmScope": "ming-guideline",
+  "npmScope": "ming-guide",
   "affected": {
     "defaultBase": "main"
   },
@@ -9,15 +9,24 @@
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
         "cacheableOperations": [
           "build",
           "lint",
           "test",
           "e2e"
-        ]
+        ],
+        "accessToken": "YmMyYTk3MzUtN2E5MC00YmM4LThhNmQtOGMxYmY5N2UzMTAzfHJlYWQtd3JpdGU="
       }
     }
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*",
+    "tools/eslint-rules/**/*": "*"
   }
 }

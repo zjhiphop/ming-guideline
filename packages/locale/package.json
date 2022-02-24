@@ -1,0 +1,11 @@
+{
+  "name": "@ming-guide/locale",
+  "description": "Minglabs Guideline locale",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "module": "index.ts",
+  "unpkg": "index.js",
+  "jsdelivr": "index.js",
+  "types": "index.d.ts",
+  "license": "MIT"
+}

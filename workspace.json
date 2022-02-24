@@ -1,4 +1,15 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "components": "packages/components",
+    "directives": "packages/directives",
+    "docs": "packages/docs",
+    "eslint-rules": "tools/eslint-rules",
+    "hooks": "packages/hooks",
+    "ming-guide": "packages/ming-guide",
+    "playground": "packages/playground",
+    "theme": "packages/theme",
+    "tokens": "packages/tokens",
+    "utils": "packages/utils"
+  }
 }
